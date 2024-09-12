@@ -79,3 +79,9 @@ If no validation should be applicable, 'NONE' value should be set for the corres
 - NONE: Not validated
 - POSITIVE_NUMBER: Must be greater than zero
 - UUID: Must be valid UUID format
+
+### Architecture technical notes
+
+Implementation structure of this project is a relaxed application of "Clean Architecture" or the like.
+However it intentionally doesn't follow all of its structure constrains.
+This particular implementation was inspired by one of dev community live sessions deliberating over pros and cons of applying Hexagonal architecture in real life projects and compromises that might be considered to take when applying it.
