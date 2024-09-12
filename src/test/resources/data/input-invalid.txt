@@ -1,0 +1,2 @@
+18148426-89e1-11ee-b9d1-0242ac120002|1X1D14|John Smith|Likes Apricots|Rides A Bike|6.2|12.1
+xxxx-invalid-xxxx|2 X2 D 24|Mike ^$$"£^^%&|Likes Grape|Drives an SUV|AAA|AAA

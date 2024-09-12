@@ -1,0 +1,37 @@
+server:
+  shutdown: graceful
+spring:
+  application:
+    name: uploader
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: false
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+application:
+  clients:
+    ip-validation:
+      url: 'http://ip-api.com/json/%s'
+  security:
+    blocked-countries: China,Spain,USA
+    blocked-isps: Amazon,Google Cloud,Microsoft Azure
+  service:
+    validate-content: true
+    input-attributes: UUID,ID,Name,Likes,Transport,Avg Speed,Top Speed
+    output-attributes: Name, Transport, Top Speed
+    record-validation-types: UUID,IDENTIFIER,NAME,NAME,NAME,POSITIVE_NUMBER,POSITIVE_NUMBER
