@@ -73,3 +73,9 @@ The input file must conform to this property definition.
 If no validation should be applicable, 'NONE' value should be set for the corresponding field.
 **record-validation-types** must match all individual fields configured in **input-attributes** property.
 
+##### Validation types:
+- IDENTIFIER: Only capital letters and numbers allowed
+- NAME: Special characters are not allowed.
+- NONE: Not validated
+- POSITIVE_NUMBER: Must be greater than zero
+- UUID: Must be valid UUID format
